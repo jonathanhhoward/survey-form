@@ -1,0 +1,72 @@
+html {
+    font: 10px arial, sans-serif;
+    background-color: cadetblue;
+}
+
+body {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.row {
+    margin: 20px;
+}
+
+.labels {
+    display: inline-block;
+    width: 40%;
+    padding-top: .25em;
+    vertical-align: top;
+    text-align: right;
+}
+
+.inputs {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.input-field,
+.dropdown,
+textarea {
+    height: 1.5em;
+    width: 80%;
+    border: 2px solid cadetblue;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    background-color: #eee;
+    padding: 0 .5em;
+}
+
+.dropdown {
+    width: 12ch;
+    padding: 0;
+}
+
+textarea {
+    height: 6em;
+}
+
+#submit {
+    font-size: 1.5rem;
+    padding: 1ch;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 3ch;
+    color: #eee;
+}
