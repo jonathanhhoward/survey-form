@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Survey Form</title>
 </head>
@@ -14,10 +14,10 @@
     <p id="description">
         Please tell us about your personal computing experience.
     </p>
-    <form id="survey-form" action="#" method="get">
+    <form id="survey-form" action="#" method="post">
         <div class="row">
             <div class="labels">
-                <label id="name-label">Name:</label>
+                <label id="name-label" for="name">Name:</label>
             </div>
             <div class="inputs">
                 <input id="name" class="input-field" type="text" placeholder="Enter your name" autofocus required>
@@ -25,7 +25,7 @@
         </div>
         <div class="row">
             <div class="labels">
-                <label id="email-label">Email:</label>
+                <label id="email-label" for="email">Email:</label>
             </div>
             <div class="inputs">
                 <input id="email" class="input-field" type="email" placeholder="Enter your email" required>
@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="labels">
-                <label id="number-label">Age:</label>
+                <label id="number-label" for="number">Age:</label>
             </div>
             <div class="inputs">
                 <input id="number" class="input-field" type="number" min="1" max="120" placeholder="Enter your age">
@@ -57,11 +57,11 @@
                 <label>What level of education have you completed?</label>
             </div>
             <div class="inputs">
-                <label><input name="radio" type="radio" value="1"></label>Grade school<br>
-                <label><input name="radio" type="radio" value="2"></label>High school<br>
-                <label><input name="radio" type="radio" value="3"></label>Some college<br>
-                <label><input name="radio" type="radio" value="4"></label>Undergraduate degree<br>
-                <label><input name="radio" type="radio" value="5"></label>Graduate degree
+                <label><input name="ed-level" type="radio" value="1">Grade school</label><br>
+                <label><input name="ed-level" type="radio" value="2">High school</label><br>
+                <label><input name="ed-level" type="radio" value="3">Some college</label><br>
+                <label><input name="ed-level" type="radio" value="4">Undergraduate degree</label><br>
+                <label><input name="ed-level" type="radio" value="5">Graduate degree</label>
             </div>
         </div>
         <div class="row">
@@ -72,11 +72,11 @@
                 </label>
             </div>
             <div class="inputs">
-                <label><input name="devtype" type="checkbox" value="1">Desktop</label><br>
-                <label><input name="devtype" type="checkbox" value="2">Laptop</label><br>
-                <label><input name="devtype" type="checkbox" value="3">Tablet</label><br>
-                <label><input name="devtype" type="checkbox" value="4">Smart phone</label><br>
-                <label><input name="devtype" type="checkbox" value="5">Smart watch</label>
+                <label><input name="dev-type" type="checkbox" value="1">Desktop</label><br>
+                <label><input name="dev-type" type="checkbox" value="2">Laptop</label><br>
+                <label><input name="dev-type" type="checkbox" value="3">Tablet</label><br>
+                <label><input name="dev-type" type="checkbox" value="4">Smart phone</label><br>
+                <label><input name="dev-type" type="checkbox" value="5">Smart watch</label>
             </div>
         </div>
         <div class="row">
@@ -87,20 +87,20 @@
                 </label>
             </div>
             <div class="inputs">
-                <label><input name="ostype" type="checkbox" value="1">Windows</label><br>
-                <label><input name="ostype" type="checkbox" value="2">Mac OS</label><br>
-                <label><input name="ostype" type="checkbox" value="3">Linux</label><br>
-                <label><input name="ostype" type="checkbox" value="4">iOS</label><br>
-                <label><input name="ostype" type="checkbox" value="5">Android</label><br>
-                <label><input name="ostype" type="checkbox" value="6">Windows mobile</label>
+                <label><input name="os-type" type="checkbox" value="1">Windows</label><br>
+                <label><input name="os-type" type="checkbox" value="2">Mac OS</label><br>
+                <label><input name="os-type" type="checkbox" value="3">Linux</label><br>
+                <label><input name="os-type" type="checkbox" value="4">iOS</label><br>
+                <label><input name="os-type" type="checkbox" value="5">Android</label><br>
+                <label><input name="os-type" type="checkbox" value="6">Windows mobile</label>
             </div>
         </div>
         <div class="row">
             <div class="labels">
-                <label>Tell us about your favorite device:</label>
+                <label for="text-area">Tell us about your favorite device:</label>
             </div>
             <div class="inputs">
-                <textarea placeholder="Write your comments here"></textarea>
+                <textarea id="text-area" placeholder="Write your comments here"></textarea>
             </div>
         </div>
         <div class="row">
