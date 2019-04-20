@@ -70,3 +70,27 @@ textarea {
     border-radius: 3ch;
     color: #eee;
 }
+
+@media screen and (max-width: 799px) {
+    main {
+        width: unset;
+        margin: 5px;
+    }
+
+    .labels {
+        display: block;
+        width: unset;
+        text-align: left;
+        vertical-align: unset;
+    }
+
+    .inputs {
+        display: block;
+        width: unset;
+    }
+
+    .input-field,
+    textarea {
+        width: 90%;
+    }
+}
